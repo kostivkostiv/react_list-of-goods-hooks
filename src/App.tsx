@@ -22,14 +22,14 @@ enum SortType {
   default = '',
 }
 
-type FilterGoods = {
+type GoodsFilter = {
   sortField: SortType;
   reversed: boolean;
 };
 
 function getPreparedGoods(
   goods: string[],
-  { sortField, reversed }: FilterGoods,
+  { sortField, reversed }: GoodsFilter,
 ) {
   const prepareGoods = [...goods];
 
